@@ -16,4 +16,7 @@ class nginx {
     source => 'puppet:///modules/nginx/cat-pictures.conf',
     notify => Service['nginx'],
   }
+  file { '/var/www/cat-pictures/index.html':
+    content => 'I already haz cat pictures',
+  }
 }
