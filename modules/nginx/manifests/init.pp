@@ -17,6 +17,6 @@ class nginx {
     notify => Service['nginx'],
   }
   file { '/var/www/cat-pictures/index.html':
-    content => 'I don\'t want cat pictures',
+    content => 'I do want cat pictures',
   }
 }
